@@ -24,7 +24,7 @@ Requires:      rtl-sdr-devel
 Program to decode radio transmissions from devices on the ISM bands (and other frequencies)
 
 %prep
-%setup -n %{name}-%{git_commit}
+%setup -n %{name}-%{github_commit}
 
 %build
 ./do_build.sh
