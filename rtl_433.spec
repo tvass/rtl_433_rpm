@@ -1,6 +1,6 @@
 %global         github_owner merbanan
 %global         github_name  rtl_433
-%global         github_commit 519f839
+%global         github_commit 519f8392796ed9f7a836bfe0c4ad26fdad310503
 %global         debug_package %{nil}
 
 Name:           %{github_name}
@@ -24,7 +24,7 @@ Requires:      rtl-sdr-devel
 Program to decode radio transmissions from devices on the ISM bands (and other frequencies)
 
 %prep
-%setup
+%setup -n %{name}-%{git_commit}
 
 %build
 ./do_build.sh
