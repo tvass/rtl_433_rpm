@@ -2,9 +2,10 @@
 %global         github_name  rtl_433
 %global         github_commit f8d9a01e68a6578289cda0dae383942c4779a4b5
 %global         debug_package %{nil}
+%define         build_timestamp %(date +"%Y%m%d")
 
 Name:           %{github_name}
-Version:        20.02
+Version:        %{build_timestamp}
 Release:        %{github_commit}
 Summary:        Program to decode radio transmissions from devices on the ISM bands (and other frequencies)
 License:        GPL-2.0-only
