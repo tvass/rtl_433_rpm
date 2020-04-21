@@ -1,6 +1,6 @@
 %global         github_owner merbanan
 %global         github_name  rtl_433
-%global         github_commit 6b09d633200de9d7ccdd5904d9eb6df03a45148d
+%global         github_commit f8d9a01e68a6578289cda0dae383942c4779a4b5
 %global         debug_package %{nil}
 
 Name:           %{github_name}
