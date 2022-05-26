@@ -1,6 +1,6 @@
 %global         github_owner merbanan
 %global         github_name  rtl_433
-%global         github_commit 9eec461132ee880c4e1a969026f81be9934682cf
+%global         github_commit 8cdb233beca2d17dff1f7d9d7423cfe23d08ef53
 %global         debug_package %{nil}
 %define         build_timestamp %(date +"%Y%m%d")
 
