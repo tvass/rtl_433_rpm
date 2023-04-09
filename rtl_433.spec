@@ -1,6 +1,6 @@
 %global         github_owner merbanan
 %global         github_name  rtl_433
-%global         github_commit b605a3d2a7df02eae5e3405469e79810dfa0b7a3
+%global         github_commit 22.11
 %global         debug_package %{nil}
 %define         build_timestamp %(date +"%Y%m%d")
 
@@ -11,10 +11,14 @@ Summary:        Program to decode radio transmissions from devices on the ISM ba
 License:        GPL-2.0-only
 
 URL:            https://github.com/%{github_owner}/%{github_name}
-Source0:        https://github.com/%{github_owner}/%{github_name}/archive/%{github_commit}/%{name}-%{github_commit}.tar.gz
+Source0:        https://github.com/%{github_owner}/%{github_name}/archive/refs/tags/%{github_commit}/%{name}-%{github_commit}.tar.gz
 
 BuildRequires: cmake
+%if 0%{?fedora} >= 37
+BuildRequires: libusb1-devel
+%else
 BuildRequires: libusb-devel
+%endif
 BuildRequires: rtl-sdr-devel
 BuildRequires: make
 BuildRequires: gcc-c++
