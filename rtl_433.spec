@@ -1,6 +1,6 @@
 %global         github_owner merbanan
 %global         github_name  rtl_433
-%global         github_commit b605a3d2a7df02eae5e3405469e79810dfa0b7a3
+%global         github_commit 672c4bbc6ccf1dc03f7a1216607d546940da4715
 %global         debug_package %{nil}
 %define         build_timestamp %(date +"%Y%m%d")
 
@@ -14,7 +14,7 @@ URL:            https://github.com/%{github_owner}/%{github_name}
 Source0:        https://github.com/%{github_owner}/%{github_name}/archive/%{github_commit}/%{name}-%{github_commit}.tar.gz
 
 BuildRequires: cmake
-BuildRequires: libusb-devel
+BuildRequires: libusb1-devel
 BuildRequires: rtl-sdr-devel
 BuildRequires: make
 BuildRequires: gcc-c++
