@@ -28,7 +28,7 @@ Program to decode radio transmissions from devices on the ISM bands (and other f
 %setup -n %{name}-%{github_commit}
 
 %build
-./do_build.sh
+./.ci/scripts/do_build.sh
 
 %install
 # The do_build.sh does not output to _bindir.
